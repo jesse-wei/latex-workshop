@@ -1,0 +1,62 @@
+%%%%% IMPORTS %%%%%
+% \usepackage{fourier} % Cool font
+\usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref} % Required for \href for hyperlinks
+\usepackage{amsmath, amsthm, amsfonts} % amsthm is for theorems. amsfonts is for \mathbb (etc.)
+
+% Define theorem and corollary environments
+% Required args in {}.
+% Optional arg in [] defines numbering.
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+
+\newcommand{\R}{\mathbb{R}}
+% [2] means 2 arguments
+% #1 means first argument and #2 means second argument
+\newcommand{\cv}[2]{\begin{bmatrix}#1\\#2\end{bmatrix}}
+
+\usepackage{listings} % For code listings
+
+\usepackage[
+backend=biber,
+style=alphabetic,
+sorting=ynt
+]{biblatex} % Bibliography
+\addbibresource{refs.bib}
+
+
+%%%%%%%%%% IGNORE %%%%%%%%%%
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                                     
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\usepackage{tcolorbox} % Theorem boxes
+\tcbuselibrary{theorems}
+\newtcbtheorem[number within=subsection]{exercise}{Exercise}{colback=magenta!5, colframe=magenta!35!black,fonttitle=\bfseries}{th}
+\newtcbtheorem[number within=subsection]{solution}{Solution}{colback=green!5, colframe=green!35!black,fonttitle=\bfseries}{th}
+
+\usepackage{commath}
+%%%%%%%%%% IGNORE %%%%%%%%%%
