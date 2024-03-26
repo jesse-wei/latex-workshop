@@ -4,4 +4,4 @@
 
 [main.pdf](main.pdf) is the output.
 
-[template](template) contains files that are missing some parts that were used to allow attendees to follow along with the demo.
+[ignore/template](ignore/template) contains files that are missing some parts that were used to allow attendees to follow along with the demo.
